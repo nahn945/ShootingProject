@@ -27,6 +27,7 @@ bin/
 *.suo
 *.userosscache
 *.sln.docstates
+*.ipch
 
 # ----- CMake (if used) -----
 CMakeFiles/
