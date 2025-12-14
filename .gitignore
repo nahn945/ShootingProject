@@ -1,41 +1,39 @@
-# Prerequisites
-*.d
+# ===================================
+# C++ / Siv3D / Visual Studio
+# ===================================
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# ----- Build outputs -----
+App/
+Intermediate/
+Debug/
+Release/
+x64/
+build/
+bin/
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
+# ----- Executables -----
+*.exe
+*.dll
+*.pdb
 *.ilk
 
-# Debugger Files
-*.pdb
+# ----- Object files -----
+*.obj
+*.o
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# ----- Visual Studio -----
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Fortran module files
-*.mod
-*.smod
+# ----- CMake (if used) -----
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# ----- OS -----
+.DS_Store
+Thumbs.db
