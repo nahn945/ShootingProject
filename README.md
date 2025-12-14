@@ -25,3 +25,23 @@
 ## 工夫した点
 
 ## 課題・改善点
+
+# コーディング・命名規則
+
+## コーディング規則
+- **変数名**：lowerCamelCase  
+  例：`playerSpeed`, `currentScene`
+
+- **構造体・クラス名**：UpperCamelCase  
+  例：`Player`, `EnemyManager`
+
+- **定数名**：SNAKE_CASE 
+  例：`MAX_HP`, `DEFAULT_SPEED`
+
+## 命名規則
+- **ブランチ**
+  `issue番号/feature or fix/ユーザー名/issue名`
+
+- **プルリクエスト**
+  `feat or fix: issue名`
+
