@@ -1,0 +1,14 @@
+# ===== Build =====
+Debug/
+Release/
+build/
+bin/
+
+# ===== Object / Executable =====
+*.obj
+*.exe
+
+# ===== Visual Studio =====
+.vs/
+*.user
+*.suo
