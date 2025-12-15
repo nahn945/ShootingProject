@@ -1,5 +1,6 @@
 ﻿#pragma once
 # include <Siv3D.hpp>
+# include "../Player/Player.h"
 
 using App = SceneManager<String>;
 
@@ -15,6 +16,16 @@ public:
 // ゲームシーン
 class Game : public App::Scene
 {
+private:
+	Config defaultConfig =
+	{
+		KeyLeft,
+		KeyRight,
+		KeyUp,
+		KeyDown
+	};
+
+	Player player;
 public:
 	Game(const InitData& init);
 	void update() override;
