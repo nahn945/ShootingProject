@@ -36,5 +36,5 @@ void Player::movePos()
 	{
 		velocity = Vec2{ 0,0 };
 	}
-	pos += velocity;
+	pos += velocity * speed;
 }
