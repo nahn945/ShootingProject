@@ -8,6 +8,7 @@ struct Config
 	Input Right;
 	Input Up;
 	Input Down;
+	Input Attack;
 };
 
 class Player
@@ -39,7 +40,7 @@ private:
 	* 攻撃関連
 	* ====================
 	*/
-	Array<std::unique_ptr<Bullet>> bullets;
+	bool isShooting;
 
 public:
 	Player();
@@ -49,6 +50,8 @@ public:
 	void movePos();
 
 	inline void setConfig(Config config_) { playerConfig = config_; }
-	inline Vec2 getPos() { return pos; }
-	inline Circle getHitCircle() { return hitCircle; }
+
+	inline Vec2 getPos() const { return pos; }
+	inline Circle getHitCircle() const { return hitCircle; }
+	inline bool getIsShooting() const { return isShooting; }
 };

@@ -8,7 +8,7 @@ Title::Title(const InitData& init)
 
 void Title::update()
 {
-	Print << U"This is the Title Scene";
+	//Print << U"This is the Title Scene";
 
 	if (KeyEnter.down()) changeScene(U"Game");
 }

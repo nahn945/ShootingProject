@@ -4,6 +4,7 @@
 
 void Main()
 {
+	
 	App manager;
 	manager.add<Title>(U"Title");
 	manager.add<Game>(U"Game");
