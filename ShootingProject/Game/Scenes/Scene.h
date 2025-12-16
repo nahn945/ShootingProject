@@ -4,6 +4,8 @@
 
 #define SHOOTING_INTERVAL 0.5
 
+constexpr Vec2 SHOOTING_AREA_SIZE = {640, 896}; // 上下UI:32px 左右UI:320px
+
 using App = SceneManager<String>;
 
 // タイトルシーン
@@ -31,6 +33,8 @@ private:
 	Player player;
 	Array<std::unique_ptr<Bullet>> bullets;
 	double shootingInterval;
+
+	RectF shootingArea;
 
 public:
 	Game(const InitData& init);
