@@ -15,6 +15,7 @@ public:
 	void update();
 	void draw() const;
 
+	inline void damage(int value) { HP -= value; }
 	bool getIsDead() const { return isDead; }
 	Circle getHitCircle() const { return hitCircle; }
 };

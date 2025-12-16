@@ -32,9 +32,39 @@ void Game::update()
 		e->update();
 	}
 
+	for (auto& b : bullets)
+	{
+		if (!b->getIsActive())
+			continue;
+
+		for (auto& e : enemies)
+		{
+			if (e->getIsDead())
+				continue;
+
+			if (e->getHitCircle().intersects(b->getHitCircle()))
+			{
+				e->damage(b->getAttackPow());
+
+				if (!b->getIsPierce())
+				{
+					b->setIsActiveFalse();
+					break;
+				}
+			}
+
+		}
+	}
+
+
 	bullets.remove_if([](const std::unique_ptr<Bullet>& b)
 	{
-		return b->getIsOutSide();
+		return b->getIsOutSide() || !b->getIsActive();
+	});
+
+	enemies.remove_if([](const std::unique_ptr<Enemy>& e)
+	{
+		return e->getIsDead();
 	});
 
 	player.update();
