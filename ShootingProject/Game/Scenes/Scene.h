@@ -1,6 +1,7 @@
 ﻿#pragma once
 # include <Siv3D.hpp>
 # include "../Player/Player.h"
+# include "../Enemy/Enemy.h"
 
 #define SHOOTING_INTERVAL 0.5
 
@@ -32,6 +33,7 @@ private:
 
 	Player player;
 	Array<std::unique_ptr<Bullet>> bullets;
+	Array<std::unique_ptr<Enemy>> enemies;
 	double shootingInterval;
 
 	RectF shootingArea;
