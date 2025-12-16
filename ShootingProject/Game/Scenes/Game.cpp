@@ -2,9 +2,11 @@
 
 Game::Game(const InitData& init)
 	: IScene{ init }
+	, shootingArea{Scene::CenterF() - SHOOTING_AREA_SIZE / 2, SHOOTING_AREA_SIZE}
 {
 	player.setConfig(defaultConfig);
 	shootingInterval = 0.0;
+	Scene::SetBackground(ColorF{0.6, 0.8, 0.7});
 }
 
 void Game::update()
@@ -36,6 +38,7 @@ void Game::update()
 
 void Game::draw() const
 {
+	shootingArea.draw(Palette::Black);
 	player.draw();
 	for (auto& b : bullets)
 	{
