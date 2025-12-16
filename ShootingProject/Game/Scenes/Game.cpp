@@ -7,6 +7,9 @@ Game::Game(const InitData& init)
 	player.setConfig(defaultConfig);
 	shootingInterval = 0.0;
 	Scene::SetBackground(ColorF{0.6, 0.8, 0.7});
+
+	// デバッグ用の敵
+	enemies.push_back(std::make_unique<Enemy>(Vec2{ Scene::CenterF().x, Scene::CenterF().y - 200 }));
 }
 
 void Game::update()
@@ -22,6 +25,11 @@ void Game::update()
 	for (auto& b : bullets)
 	{
 		b->update();
+	}
+
+	for (auto& e : enemies)
+	{
+		e->update();
 	}
 
 	bullets.remove_if([](const std::unique_ptr<Bullet>& b)
@@ -43,5 +51,10 @@ void Game::draw() const
 	for (auto& b : bullets)
 	{
 		b->draw();
+	}
+
+	for (auto& e: enemies)
+	{
+		e->draw();
 	}
 }
