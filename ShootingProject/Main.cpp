@@ -4,7 +4,8 @@
 
 void Main()
 {
-	
+	Window::Resize(1280, 960); // 4:3
+
 	App manager;
 	manager.add<Title>(U"Title");
 	manager.add<Game>(U"Game");
