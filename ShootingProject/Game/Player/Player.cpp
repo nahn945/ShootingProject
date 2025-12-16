@@ -2,6 +2,7 @@
 
 Player::Player()
 	: pos(Scene::CenterF())
+	, isShooting(false)
 {
 	hitCircle.setCenter(pos);
 	hitCircle.setR(HIT_SIZE);
@@ -37,4 +38,5 @@ void Player::movePos()
 		velocity = Vec2{ 0,0 };
 	}
 	pos += velocity * speed;
+	isShooting = playerConfig.Attack.pressed();
 }

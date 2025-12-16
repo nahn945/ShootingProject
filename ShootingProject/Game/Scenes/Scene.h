@@ -2,6 +2,8 @@
 # include <Siv3D.hpp>
 # include "../Player/Player.h"
 
+#define SHOOTING_INTERVAL 0.5
+
 using App = SceneManager<String>;
 
 // タイトルシーン
@@ -22,10 +24,14 @@ private:
 		KeyLeft,
 		KeyRight,
 		KeyUp,
-		KeyDown
+		KeyDown,
+		KeyZ
 	};
 
 	Player player;
+	Array<std::unique_ptr<Bullet>> bullets;
+	double shootingInterval;
+
 public:
 	Game(const InitData& init);
 	void update() override;
