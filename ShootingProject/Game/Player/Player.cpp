@@ -14,6 +14,7 @@ void Player::update()
 	movePos();
 	hitCircle.setCenter(pos);
 
+	shootingInterval += 0.1;
 }
 
 void Player::draw() const
