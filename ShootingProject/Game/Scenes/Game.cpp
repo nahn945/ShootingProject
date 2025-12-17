@@ -5,7 +5,6 @@ Game::Game(const InitData& init)
 	, shootingArea{Scene::CenterF() - SHOOTING_AREA_SIZE / 2, SHOOTING_AREA_SIZE}
 {
 	player.setConfig(defaultConfig);
-	shootingInterval = 0.0;
 	Scene::SetBackground(ColorF{0.6, 0.8, 0.7});
 
 	// デバッグ用の敵
@@ -16,10 +15,24 @@ void Game::update()
 {
 	//Print << U"This is the Game scene";
 	
-	if (player.getIsShooting() && shootingInterval > SHOOTING_INTERVAL)
+	if (player.getIsShooting() && player.getShootingInterval() > SHOOTING_INTERVAL)
 	{
-		bullets.push_back(std::make_unique<Bullet>(player.getPos()));
-		shootingInterval = 0.0;
+		bullets.push_back(std::make_unique<Bullet>(player.getPos(), -90, BulletOwner::PLAYER));
+		player.resetShootingInterval();
+	}
+
+	for (auto& e : enemies)
+	{
+		e->update();
+		if (e->getShootingInterval() > e->getMaxInterval())
+		{
+			bullets.push_back(std::make_unique<Bullet>(e->getPos(), 90, BulletOwner::ENEMY));
+			if (e->getMaxInterval() != 100)
+			{
+				e->setMaxInterval(100);
+			}
+			e->resetShootingInterval();
+		}
 	}
 
 	for (auto& b : bullets)
@@ -27,11 +40,7 @@ void Game::update()
 		b->update();
 	}
 
-	for (auto& e : enemies)
-	{
-		e->update();
-	}
-
+	// 敵と弾の接触判定
 	for (auto& b : bullets)
 	{
 		if (!b->getIsActive())
@@ -42,7 +51,7 @@ void Game::update()
 			if (e->getIsDead())
 				continue;
 
-			if (e->getHitCircle().intersects(b->getHitCircle()))
+			if (e->getHitCircle().intersects(b->getHitCircle()) && b->getOwner() == BulletOwner::PLAYER)
 			{
 				e->damage(b->getAttackPow());
 
@@ -68,8 +77,6 @@ void Game::update()
 	});
 
 	player.update();
-
-	shootingInterval += 0.1;
 
 	Print << bullets.size();
 }

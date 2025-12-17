@@ -1,6 +1,5 @@
 ﻿#pragma once
 # include <Siv3D.hpp>
-# include "../Bullets/Bullet.h"
 
 struct Config
 {
@@ -41,6 +40,7 @@ private:
 	* ====================
 	*/
 	bool isShooting;
+	double shootingInterval = 0.0;
 
 public:
 	Player();
@@ -50,7 +50,9 @@ public:
 	void movePos();
 
 	inline void setConfig(Config config_) { playerConfig = config_; }
+	inline void resetShootingInterval() { shootingInterval = 0.0; }
 
+	inline double getShootingInterval() const { return shootingInterval; }
 	inline Vec2 getPos() const { return pos; }
 	inline Circle getHitCircle() const { return hitCircle; }
 	inline bool getIsShooting() const { return isShooting; }

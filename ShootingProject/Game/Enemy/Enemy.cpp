@@ -11,6 +11,7 @@ Enemy::Enemy(Vec2 startPos)
 void Enemy::update()
 {
 	isDead = HP <= 0;
+	shootingInterval += 0.1;
 }
 
 void Enemy::draw() const
