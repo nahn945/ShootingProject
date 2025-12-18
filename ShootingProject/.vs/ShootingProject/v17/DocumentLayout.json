@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Bullets\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Bullets\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,28 +27,16 @@
       "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Enemy\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Bullets\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Bullets\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Bullets\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Bullets\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Enemy\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Title.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -61,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -101,20 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Enemy.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Enemy\\Enemy.h",
               "RelativeDocumentMoniker": "Game\\Enemy\\Enemy.h",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Enemy\\Enemy.h",
               "RelativeToolTip": "Game\\Enemy\\Enemy.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-16T11:18:52.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Enemy\\Enemy.cpp",
               "RelativeDocumentMoniker": "Game\\Enemy\\Enemy.cpp",
@@ -122,8 +122,7 @@
               "RelativeToolTip": "Game\\Enemy\\Enemy.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-16T11:18:44.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T11:18:44.231Z"
             },
             {
               "$type": "Document",
@@ -147,11 +146,12 @@
               "RelativeToolTip": "Game\\Bullets\\Bullet.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-16T09:20:21.324Z"
+              "WhenOpened": "2025-12-16T09:20:21.324Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Bullet.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Bullets\\Bullet.h",
               "RelativeDocumentMoniker": "Game\\Bullets\\Bullet.h",
@@ -164,57 +164,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Game.cpp",
               "RelativeDocumentMoniker": "Game\\Scenes\\Game.cpp",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Game.cpp",
               "RelativeToolTip": "Game\\Scenes\\Game.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAqwCoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-16T09:00:30.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Scene.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Scene.h",
               "RelativeDocumentMoniker": "Game\\Scenes\\Scene.h",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Scene.h",
               "RelativeToolTip": "Game\\Scenes\\Scene.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-16T08:59:07.631Z"
+              "WhenOpened": "2025-12-16T08:59:07.631Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.cpp",
               "RelativeDocumentMoniker": "Game\\Player\\Player.cpp",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.cpp",
               "RelativeToolTip": "Game\\Player\\Player.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-16T08:55:37.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.h",
               "RelativeDocumentMoniker": "Game\\Player\\Player.h",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.h",
               "RelativeToolTip": "Game\\Player\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-16T08:55:16.734Z"
+              "WhenOpened": "2025-12-16T08:55:16.734Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",

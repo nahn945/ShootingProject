@@ -15,7 +15,7 @@ void Game::update()
 {
 	//Print << U"This is the Game scene";
 	
-	if (player.getIsShooting() && player.getShootingInterval() > SHOOTING_INTERVAL)
+	if (player.getIsShooting() && player.getShootingInterval() > player.getMaxInterval())
 	{
 		bullets.push_back(std::make_unique<Bullet>(player.getPos(), -90, BulletOwner::PLAYER));
 		player.resetShootingInterval();
@@ -40,7 +40,7 @@ void Game::update()
 		b->update();
 	}
 
-	// 敵と弾の接触判定
+	// 敵と弾、弾とプレイヤーの接触判定
 	for (auto& b : bullets)
 	{
 		if (!b->getIsActive())
@@ -63,6 +63,19 @@ void Game::update()
 			}
 
 		}
+
+		if (b->getHitCircle().intersects(player.getHitCircle()) && b->getOwner() == BulletOwner::ENEMY)
+		{
+			player.damage(b->getAttackPow());
+
+			Print << player.getHP();
+
+			if (!b->getIsPierce())
+			{
+				b->setIsActiveFalse();
+				break;
+			}
+		}
 	}
 
 
@@ -78,7 +91,7 @@ void Game::update()
 
 	player.update();
 
-	Print << bullets.size();
+	//Print << bullets.size();
 }
 
 void Game::draw() const
