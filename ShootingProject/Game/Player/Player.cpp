@@ -10,6 +10,8 @@ Player::Player()
 
 void Player::update()
 {
+	isDead = HP <= 0;
+
 	velocity = Vec2{ 0,0 };
 	movePos();
 	hitCircle.setCenter(pos);

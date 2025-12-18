@@ -4,8 +4,6 @@
 # include "../Enemy/Enemy.h"
 # include "../Bullets/Bullet.h"
 
-#define SHOOTING_INTERVAL 0.5
-
 constexpr Vec2 SHOOTING_AREA_SIZE = {640, 896}; // 上下UI:32px 左右UI:320px
 
 using App = SceneManager<String>;

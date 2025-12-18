@@ -1,22 +1,7 @@
-﻿  stdafx.cpp
-  BulletPattern.cpp
-  Bullet.cpp
-  Enemy.cpp
-  Main.cpp
-  Player.cpp
+﻿  Player.cpp
   Game.cpp
   Title.cpp
-C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Game\BulletPatterns\BulletPattern.cpp(3,46): warning C4100: 'dt': 参照されないパラメーター
-  (ソース ファイル '/Game/BulletPatterns/BulletPattern.cpp' をコンパイルしています)
-  
-C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Game\BulletPatterns\BulletPattern.cpp(3,36): warning C4100: 'b': 参照されないパラメーター
-  (ソース ファイル '/Game/BulletPatterns/BulletPattern.cpp' をコンパイルしています)
-  
-     ライブラリ C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Intermediate\ShootingProject\Debug\ShootingProject(debug).lib とオブジェクト C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Intermediate\ShootingProject\Debug\ShootingProject(debug).exp を作成中
+  Main.cpp
   ShootingProject.vcxproj -> C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Intermediate\ShootingProject\Debug\ShootingProject(debug).exe
-C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Game\Bullets\Bullet.cpp(3): warning C26495: 変数 'Bullet::velocity' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。
-C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Game\Player\Player.cpp(3): warning C26495: 変数 'Player::velocity' が初期化されていません。メンバー変数は必ず初期化してください (type.6)。
-C:\Users\nahnn\Documents\OpenSiv3D_0.6.16\include\Siv3D\detail\DateTime.ipp(69): warning C26437: スライスしないでください (es.63)。
-C:\Users\nahnn\Documents\OpenSiv3D_0.6.16\include\Siv3D\detail\DateTime.ipp(69): warning C26437: スライスしないでください (es.63)。
   C:\Users\nahnn\source\repos\ShootingProject\ShootingProject\Intermediate\ShootingProject\Debug\ShootingProject(debug).exe
   1 個のファイルをコピーしました

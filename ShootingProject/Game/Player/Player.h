@@ -16,6 +16,9 @@ private:
 	
 	Config playerConfig;
 
+	int HP = 10;
+	bool isDead = false;
+
 	/*
 	* ====================
 	* 移動関連
@@ -41,7 +44,7 @@ private:
 	*/
 	bool isShooting;
 	double shootingInterval = 0.0;
-
+	double maxInterval = 0.5;
 public:
 	Player();
 	void update();
@@ -49,9 +52,14 @@ public:
 
 	void movePos();
 
+	inline void damage(int value) { HP -= value; }
 	inline void setConfig(Config config_) { playerConfig = config_; }
 	inline void resetShootingInterval() { shootingInterval = 0.0; }
+	inline void setMaxInterval(double x) { maxInterval = x; }
 
+	inline double getMaxInterval() const { return maxInterval; }
+	inline bool getIsDead() const { return isDead; }
+	inline int getHP() const { return HP; }
 	inline double getShootingInterval() const { return shootingInterval; }
 	inline Vec2 getPos() const { return pos; }
 	inline Circle getHitCircle() const { return hitCircle; }
