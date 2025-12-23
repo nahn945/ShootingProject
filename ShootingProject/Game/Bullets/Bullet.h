@@ -1,4 +1,6 @@
 ﻿#pragma once
+# include "../BulletPatterns/BulletPattern.h"
+
 
 enum class BulletOwner
 {
