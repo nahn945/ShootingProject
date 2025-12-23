@@ -1,15 +1,26 @@
 ﻿#pragma once
-# include "../Bullets/Bullet.h"
+
+enum class PatternName
+{
+	SINGLE
+};
 
 class BulletPattern
 {
-public:
-	virtual ~BulletPattern() = default;
-	virtual void update(Bullet& b, double dt) = 0;
-};
+	// 時間系
+	double startTime;
+	double endTime;
 
-class SinglePattern : public BulletPattern
-{
+	// 生成系
+	int amount;
+	double radius;
+
+	// 方向系
+	double baseAngle;
+	double gapAngle;
+	double rotateSpeed;
+
 public:
-	void update(Bullet& b, double dt) override;
+	BulletPattern(PatternName patternName);
+	void patternSingle();
 };

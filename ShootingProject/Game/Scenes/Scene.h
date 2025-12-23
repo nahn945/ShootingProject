@@ -3,6 +3,7 @@
 # include "../Player/Player.h"
 # include "../Enemy/Enemy.h"
 # include "../Bullets/Bullet.h"
+# include "../BulletPatterns/BulletPattern.h"
 
 constexpr Vec2 SHOOTING_AREA_SIZE = {640, 896}; // 上下UI:32px 左右UI:320px
 

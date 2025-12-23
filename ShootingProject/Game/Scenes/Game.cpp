@@ -13,7 +13,6 @@ Game::Game(const InitData& init)
 
 void Game::update()
 {
-	//Print << U"This is the Game scene";
 	
 	if (player.getIsShooting() && player.getShootingInterval() > player.getMaxInterval())
 	{
@@ -26,6 +25,7 @@ void Game::update()
 		e->update();
 		if (e->getShootingInterval() > e->getMaxInterval())
 		{
+			// bulletAddedTemporarily
 			bullets.push_back(std::make_unique<Bullet>(e->getPos(), 90, BulletOwner::ENEMY));
 			if (e->getMaxInterval() != 100)
 			{
