@@ -153,13 +153,10 @@
     <ClCompile Include="Game\Player\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Bullets\Bullet.cpp">
+    <ClCompile Include="Game\Entity\Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Enemy\Enemy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Game\BulletPatterns\BulletPattern.cpp">
+    <ClCompile Include="Game\Loader\JsonLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -833,13 +830,13 @@
     <ClInclude Include="Game\Player\Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Bullets\Bullet.h">
+    <ClInclude Include="Game\Entity\Entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Enemy\Enemy.h">
+    <ClInclude Include="Game\Loader\JsonLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Game\BulletPatterns\BulletPattern.h">
+    <ClInclude Include="Game\Data\EntityData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

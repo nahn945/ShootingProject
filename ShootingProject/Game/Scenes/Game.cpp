@@ -7,104 +7,53 @@ Game::Game(const InitData& init)
 	player.setConfig(defaultConfig);
 	Scene::SetBackground(ColorF{0.6, 0.8, 0.7});
 
-	// デバッグ用の敵
-	enemies.push_back(std::make_unique<Enemy>(Vec2{ Scene::CenterF().x, Scene::CenterF().y - 200 }));
+	for (auto& e : jsonLoader.load(U"../Data/debug.json"))
+	{
+		entities.push_back(std::make_unique<Entity>(e));
+	}
+
+	startTime = Scene::Time();
 }
 
 void Game::update()
 {
-	
-	if (player.getIsShooting() && player.getShootingInterval() > player.getMaxInterval())
-	{
-		bullets.push_back(std::make_unique<Bullet>(player.getPos(), -90, BulletOwner::PLAYER));
-		player.resetShootingInterval();
-	}
-
-	for (auto& e : enemies)
-	{
-		e->update();
-		if (e->getShootingInterval() > e->getMaxInterval())
-		{
-			// bulletAddedTemporarily
-			bullets.push_back(std::make_unique<Bullet>(e->getPos(), 90, BulletOwner::ENEMY));
-			if (e->getMaxInterval() != 100)
-			{
-				e->setMaxInterval(100);
-			}
-			e->resetShootingInterval();
-		}
-	}
-
-	for (auto& b : bullets)
-	{
-		b->update();
-	}
-
-	// 敵と弾、弾とプレイヤーの接触判定
-	for (auto& b : bullets)
-	{
-		if (!b->getIsActive())
-			continue;
-
-		for (auto& e : enemies)
-		{
-			if (e->getIsDead())
-				continue;
-
-			if (e->getHitCircle().intersects(b->getHitCircle()) && b->getOwner() == BulletOwner::PLAYER)
-			{
-				e->damage(b->getAttackPow());
-
-				if (!b->getIsPierce())
-				{
-					b->setIsActiveFalse();
-					break;
-				}
-			}
-
-		}
-
-		if (b->getHitCircle().intersects(player.getHitCircle()) && b->getOwner() == BulletOwner::ENEMY)
-		{
-			player.damage(b->getAttackPow());
-
-			Print << player.getHP();
-
-			if (!b->getIsPierce())
-			{
-				b->setIsActiveFalse();
-				break;
-			}
-		}
-	}
-
-
-	bullets.remove_if([](const std::unique_ptr<Bullet>& b)
-	{
-		return b->getIsOutSide() || !b->getIsActive();
-	});
-
-	enemies.remove_if([](const std::unique_ptr<Enemy>& e)
-	{
-		return e->getIsDead();
-	});
-
 	player.update();
 
-	//Print << bullets.size();
+	double t = Scene::Time() - startTime;
+
+	Print << t;
+
+	for (auto& e : entities)
+	{
+		if (t >= e->getStartTime() && t <= e->getEndTime())
+		{
+			e->update();
+		}
+	}
+
+	
+
+	// 削除（forの外で一括）
+	entities.remove_if([t](const std::unique_ptr<Entity>& e)
+	{
+		return t > e->getEndTime();
+	});
+
+	Print << entities.size();
 }
 
 void Game::draw() const
 {
 	shootingArea.draw(Palette::Black);
 	player.draw();
-	for (auto& b : bullets)
-	{
-		b->draw();
-	}
 
-	for (auto& e: enemies)
+	double t = Scene::Time() - startTime;
+
+	for (auto& e : entities)
 	{
-		e->draw();
+		if (t >= e->getStartTime() && t <= e->getEndTime())
+		{
+			e->draw();
+		}
 	}
 }
