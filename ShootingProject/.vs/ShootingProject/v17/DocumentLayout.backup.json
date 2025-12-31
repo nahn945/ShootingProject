@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Scenes\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Entity\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Entity\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Data\\debug.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Data\\debug.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Loader\\JsonLoader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,16 +23,20 @@
       "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Loader\\JsonLoader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Entity\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Entity\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Scenes\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Data\\EntityData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Data\\EntityData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Scenes\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|solutionrelative:Game\\Player\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEF2734A-631D-459A-9469-6C443F828451}|ShootingProject.vcxproj|C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -61,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -71,27 +71,27 @@
               "RelativeDocumentMoniker": "Data\\debug.json",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Data\\debug.json",
               "RelativeToolTip": "Data\\debug.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-31T10:55:42.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Entity.cpp",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.cpp",
               "RelativeDocumentMoniker": "Game\\Entity\\Entity.cpp",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.cpp",
               "RelativeToolTip": "Game\\Entity\\Entity.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-30T09:33:26.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Player\\Player.h",
               "RelativeDocumentMoniker": "Game\\Player\\Player.h",
@@ -99,12 +99,11 @@
               "RelativeToolTip": "Game\\Player\\Player.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAD0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-16T08:55:16.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T08:55:16.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Scene.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Scene.h",
               "RelativeDocumentMoniker": "Game\\Scenes\\Scene.h",
@@ -117,13 +116,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Game.cpp",
               "RelativeDocumentMoniker": "Game\\Scenes\\Game.cpp",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Scenes\\Game.cpp",
               "RelativeToolTip": "Game\\Scenes\\Game.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAnwB8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-16T09:00:30.476Z",
               "EditorCaption": ""
@@ -142,26 +141,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "JsonLoader.cpp",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Loader\\JsonLoader.cpp",
               "RelativeDocumentMoniker": "Game\\Loader\\JsonLoader.cpp",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Loader\\JsonLoader.cpp",
               "RelativeToolTip": "Game\\Loader\\JsonLoader.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-30T12:53:51.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "EntityData.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Data\\EntityData.h",
               "RelativeDocumentMoniker": "Game\\Data\\EntityData.h",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Data\\EntityData.h",
               "RelativeToolTip": "Game\\Data\\EntityData.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-30T12:58:51.508Z",
               "EditorCaption": ""
@@ -180,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "JsonLoader.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Loader\\JsonLoader.h",
               "RelativeDocumentMoniker": "Game\\Loader\\JsonLoader.h",
@@ -193,13 +192,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Entity.h",
               "DocumentMoniker": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.h",
               "RelativeDocumentMoniker": "Game\\Entity\\Entity.h",
               "ToolTip": "C:\\Users\\nahnn\\source\\repos\\ShootingProject\\ShootingProject\\Game\\Entity\\Entity.h",
               "RelativeToolTip": "Game\\Entity\\Entity.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-30T09:34:02.924Z",
               "EditorCaption": ""
@@ -214,8 +213,7 @@
               "RelativeToolTip": "Game\\Player\\Player.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-16T08:55:37.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T08:55:37.803Z"
             },
             {
               "$type": "Document",

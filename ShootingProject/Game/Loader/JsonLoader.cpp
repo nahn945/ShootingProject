@@ -15,7 +15,6 @@ Array<EntityData> JsonLoader::load(const FilePath& path)
 	{
 		EntityData data;
 
-		data.isInvincible = set[U"isInvincible"].get<bool>();
 		data.HP = set[U"HP"].get<int>();
 		data.atk = set[U"atk"].get<int>();
 		data.siz = set[U"siz"].get<double>();
@@ -27,9 +26,16 @@ Array<EntityData> JsonLoader::load(const FilePath& path)
 		data.angle = set[U"angle"].get<double>();
 		data.angularVelocity = set[U"angularVelocity"].get<double>();
 
-		data.ID = set[U"ID"].get<int>();
+		data.moveID = set[U"moveID"].get<int>();
 		data.startTime = set[U"startTime"].get<double>();
 		data.endTime = set[U"endTime"].get<double>();
+
+		data.atkID = set[U"atkID"].get<int>();
+		data.atkStartTime = set[U"atkStartTime"].get<double>();
+		data.atkEndTime = set[U"atkEndTime"].get<double>();
+
+		data.uniqueParam1 = set[U"uniqueParam1"].get<double>();
+		data.uniqueParam2 = set[U"uniqueParam2"].get<double>();
 
 		results.push_back(data);
 	}

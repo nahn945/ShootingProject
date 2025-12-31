@@ -19,6 +19,8 @@ void Game::update()
 {
 	player.update();
 
+	// ================================
+	// entityの配置関連
 	double t = Scene::Time() - startTime;
 
 	Print << t;
@@ -38,6 +40,7 @@ void Game::update()
 	{
 		return t > e->getEndTime();
 	});
+	// ================================
 
 	Print << entities.size();
 }

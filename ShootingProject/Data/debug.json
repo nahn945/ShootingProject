@@ -1,36 +1,64 @@
 {
     "entities": [
         {
-            "isInvincible": false,
             "HP": 100,
-            "atk": 10,
-            "siz": 24.0,
-            "spd": 3.0,
+            "atk": 5,
+            "siz": 20.0,
+            "spd": 120.0,
+            "pos": {
+                "x": 200.0,
+                "y": 150.0
+            },
+            "angle": 0.0,
+            "angularVelocity": 0.0,
+            "moveID": 1,
+            "startTime": 2.0,
+            "endTime": 20.0,
+            "atkID": 0,
+            "atkStartTime": 0.0,
+            "atkEndTime": 0.0,
+            "uniqueParam1": 0,
+            "uniqueParam2": 0
+        },
+        {
+            "HP": 100,
+            "atk": 5,
+            "siz": 20.0,
+            "spd": 0.0,
             "pos": {
                 "x": 500.0,
                 "y": 300.0
             },
-            "angle": 90.0,
-            "angularVelocity": 0.0,
-            "ID": 0,
-            "startTime": 1.0,
-            "endTime": 10.0
+            "angle": 0.0,
+            "angularVelocity": 2.0,
+            "moveID": 2,
+            "startTime": 3.0,
+            "endTime": 20.0,
+            "atkID": 0,
+            "atkStartTime": 0.0,
+            "atkEndTime": 0.0,
+            "uniqueParam1": 50.0,
+            "uniqueParam2": 0
         },
         {
-            "isInvincible": true,
-            "HP": 9999,
-            "atk": 20,
-            "siz": 64.0,
-            "spd": 1.5,
+            "HP": 100,
+            "atk": 5,
+            "siz": 20.0,
+            "spd": 0.0,
             "pos": {
-                "x": 620.0,
-                "y": 280.0
+                "x": 700.0,
+                "y": 300.0
             },
-            "angle": 180.0,
-            "angularVelocity": 0.8,
-            "ID": 3,
-            "startTime": 5.0,
-            "endTime": 30.0
+            "angle": 90.0,
+            "angularVelocity": 1.5,
+            "moveID": 3,
+            "startTime": 4.0,
+            "endTime": 20.0,
+            "atkID": 0,
+            "atkStartTime": 0.0,
+            "atkEndTime": 0.0,
+            "uniqueParam1": 60.0,
+            "uniqueParam2": 45.0
         }
     ]
 }
