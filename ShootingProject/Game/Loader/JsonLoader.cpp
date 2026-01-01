@@ -1,6 +1,5 @@
-﻿#include "./JsonLoader.h"
+﻿# include "./JsonLoader.h"
 
-// パスは.exeの実行ディレクトリ基準
 Array<EntityData> JsonLoader::load(const FilePath& path)
 {
 	JSON json = JSON::Load(path);
@@ -15,25 +14,21 @@ Array<EntityData> JsonLoader::load(const FilePath& path)
 	{
 		EntityData data;
 
-		data.HP = set[U"HP"].get<int>();
-		data.atk = set[U"atk"].get<int>();
-		data.siz = set[U"siz"].get<double>();
-		data.spd = set[U"spd"].get<double>();
+		// ===== status / atkStatus =====
+		LoadStatus(set[U"status"], data.status);
+		LoadStatus(set[U"atkStatus"], data.atkStatus);
 
-		data.pos.x = set[U"pos"][U"x"].get<double>();
-		data.pos.y = set[U"pos"][U"y"].get<double>();
-
-		data.angle = set[U"angle"].get<double>();
-		data.angularVelocity = set[U"angularVelocity"].get<double>();
-
+		// ===== 移動 =====
 		data.moveID = set[U"moveID"].get<int>();
 		data.startTime = set[U"startTime"].get<double>();
 		data.endTime = set[U"endTime"].get<double>();
 
+		// ===== 攻撃 =====
 		data.atkID = set[U"atkID"].get<int>();
 		data.atkStartTime = set[U"atkStartTime"].get<double>();
 		data.atkEndTime = set[U"atkEndTime"].get<double>();
 
+		// ===== 固有パラメータ =====
 		data.uniqueParam1 = set[U"uniqueParam1"].get<double>();
 		data.uniqueParam2 = set[U"uniqueParam2"].get<double>();
 
@@ -41,4 +36,19 @@ Array<EntityData> JsonLoader::load(const FilePath& path)
 	}
 
 	return results;
+}
+
+
+void JsonLoader::LoadStatus(const JSON& json, EntityStatus& status)
+{
+	status.HP = json[U"HP"].get<int>();
+	status.atk = json[U"atk"].get<int>();
+	status.siz = json[U"siz"].get<double>();
+	status.spd = json[U"spd"].get<double>();
+
+	status.pos.x = json[U"pos"][U"x"].get<double>();
+	status.pos.y = json[U"pos"][U"y"].get<double>();
+
+	status.angle = json[U"angle"].get<double>();
+	status.angularVelocity = json[U"angularVelocity"].get<double>();
 }

@@ -1,5 +1,7 @@
 ﻿# include "./Scene.h"
 
+# define ENTITY_INTERVAL 0.5
+
 Game::Game(const InitData& init)
 	: IScene{ init }
 	, shootingArea{Scene::CenterF() - SHOOTING_AREA_SIZE / 2, SHOOTING_AREA_SIZE}
@@ -19,10 +21,11 @@ void Game::update()
 {
 	player.update();
 
+	Array<std::unique_ptr<Entity>> newEntities;
+
 	// ================================
 	// entityの配置関連
 	double t = Scene::Time() - startTime;
-
 	Print << t;
 
 	for (auto& e : entities)
@@ -31,9 +34,25 @@ void Game::update()
 		{
 			e->update();
 		}
+
+
+		// Array<unique_ptr>はコピー不可なのでここでムーブする
+		if (t >= e->getAtkStartTime() && t <= e->getAtkEndTime() && t - e->getPreATK() >= ENTITY_INTERVAL)
+		{
+			auto bullets = e->callAttackPattern(e->getAtkID());
+			for (auto& b : bullets)
+			{
+				newEntities.push_back(std::move(b));
+			}
+			e->setPreATK(t);
+		}
 	}
 
-	
+	// ワンクッション挟まないと実行時エラーが出る
+	for (auto& ne : newEntities)
+	{
+		entities.push_back(std::move(ne));
+	}
 
 	// 削除（forの外で一括）
 	entities.remove_if([t](const std::unique_ptr<Entity>& e)
@@ -42,7 +61,7 @@ void Game::update()
 	});
 	// ================================
 
-	Print << entities.size();
+	//Print << entities.size();
 }
 
 void Game::draw() const
