@@ -1,0 +1,106 @@
+{
+    "entities": [
+        {
+            "status": {
+                "HP": 100,
+                "atk": 10,
+                "siz": 20.0,
+                "spd": 150.0,
+                "pos": {
+                    "x": 200.0,
+                    "y": 150.0
+                },
+                "angle": 0.0,
+                "angularVelocity": 0.0
+            },
+            "atkStatus": {
+                "HP": 1,
+                "atk": 10,
+                "siz": 6.0,
+                "spd": 300.0,
+                "pos": {
+                    "x": 200.0,
+                    "y": 150.0
+                },
+                "angle": 0.0,
+                "angularVelocity": 0.0
+            },
+            "moveID": 0,
+            "startTime": 0.0,
+            "endTime": 20.0,
+            "atkID": 1,
+            "atkStartTime": 1.0,
+            "atkEndTime": 18.0,
+            "uniqueParam1": 0.0,
+            "uniqueParam2": 0.0
+        },
+        {
+            "status": {
+                "HP": 150,
+                "atk": 5,
+                "siz": 25.0,
+                "spd": 0.0,
+                "pos": {
+                    "x": 500.0,
+                    "y": 300.0
+                },
+                "angle": 0.0,
+                "angularVelocity": 1.5
+            },
+            "atkStatus": {
+                "HP": 12,
+                "atk": 8,
+                "siz": 6.0,
+                "spd": 250.0,
+                "pos": {
+                    "x": 500.0,
+                    "y": 300.0
+                },
+                "angle": 0.0,
+                "angularVelocity": 0.0
+            },
+            "moveID": 0,
+            "startTime": 2.0,
+            "endTime": 22.0,
+            "atkID": 2,
+            "atkStartTime": 3.0,
+            "atkEndTime": 20.0,
+            "uniqueParam1": 120.0,
+            "uniqueParam2": 0.0
+        },
+        {
+            "status": {
+                "HP": 200,
+                "atk": 8,
+                "siz": 30.0,
+                "spd": 0.0,
+                "pos": {
+                    "x": 700.0,
+                    "y": 350.0
+                },
+                "angle": 0.0,
+                "angularVelocity": 1.2
+            },
+            "atkStatus": {
+                "HP": 3,
+                "atk": 12,
+                "siz": 7.0,
+                "spd": 200.0,
+                "pos": {
+                    "x": 700.0,
+                    "y": 350.0
+                },
+                "angle": 0.0,
+                "angularVelocity": 20.0
+            },
+            "moveID": 0,
+            "startTime": 4.0,
+            "endTime": 25.0,
+            "atkID": 4,
+            "atkStartTime": 5.0,
+            "atkEndTime": 23.0,
+            "uniqueParam1": 50.0,
+            "uniqueParam2": 45.0
+        }
+    ]
+}

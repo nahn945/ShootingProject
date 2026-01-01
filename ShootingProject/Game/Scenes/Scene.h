@@ -1,9 +1,8 @@
 ﻿#pragma once
 # include <Siv3D.hpp>
 # include "../Player/Player.h"
-# include "../Enemy/Enemy.h"
-# include "../Bullets/Bullet.h"
-# include "../BulletPatterns/BulletPattern.h"
+# include "../Entity/Entity.h"
+# include "../Loader/JsonLoader.h"
 
 constexpr Vec2 SHOOTING_AREA_SIZE = {640, 896}; // 上下UI:32px 左右UI:320px
 
@@ -22,6 +21,7 @@ public:
 class Game : public App::Scene
 {
 private:
+	double startTime;
 	Config defaultConfig =
 	{
 		KeyLeft,
@@ -32,8 +32,9 @@ private:
 	};
 
 	Player player;
-	Array<std::unique_ptr<Bullet>> bullets;
-	Array<std::unique_ptr<Enemy>> enemies;
+
+	JsonLoader jsonLoader;
+	Array<std::unique_ptr<Entity>> entities;
 
 	RectF shootingArea;
 
